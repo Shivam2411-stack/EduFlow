@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlow - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+</head>
+<body>
+    <div class="signup-container">
+        
+        <form id="signup-form" align="center">
+            <h2>Sign Up</h2>
+            <label for="email">Email <sup>*</sup></label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="pass">Create Password <sup>*</sup></label>
+            <input type="password" id="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}" required><br>
+            <span id="pat">password should contain 8 or more characters also, at least 1 uppercase letter, 1 number and 1 symbol @ in it </span><br>
+            <label for="cpass">Confirm Password <sup>*</sup></label>
+            <input type="password" id="cpass" name="cpassword" required>
+            <br>
+            <span id="errorm"></span>
+            <br>
+            <button type="submit">Sign Up</button>
+    
+            <br>
+            <hr>
+            <p>Already have an account.? <a href="signin.html">Sign in</a></p>
+        </form>
+    </div> 
+
+    <script>
+        var a = document.querySelector("#signup-form");
+        a.addEventListener('submit',function() {
+            
+        var pass = document.querySelector('#pass').value;
+        var error = document.querySelector('#errorm');
+        var cpass = document.querySelector('#cpass').value;
+        // error.style.display = 'none';
+        var returnval = true;
+        if (pass != cpass) {
+            errorm.innerHTML = 'both passwords should be same';
+            error.style.color = 'red';
+            error.style.fontStyle = 'italic';
+            error.style.fontSize = '10px';
+            // error.style.marginLeft = '';
+            error.style.animation = 'errom 0.32s ease-in-out';
+            
+            returnval = false;
+
+        } else {
+            // errorm.style.display = 'none';
+            errorm.innerHTML = '';
+            returnval =  true;
+        }
+        if (!returnval) {
+        event.preventDefault();
+    }
+return returnval;
+        })
+    </script>
+</body>
+</html>
