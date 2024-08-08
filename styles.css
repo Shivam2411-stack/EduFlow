@@ -8,7 +8,11 @@ html,body{
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background:url('12661.jpg');
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +21,13 @@ body {
 }
 
 .signup-container {
-    background-color: #fff;
+    color: whitesmoke;
+    background-color: rgba(130, 132, 238, 0.089);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 580px;
-    height: 600px;
+    width: 500px;
+    height: 80%;
     overflow-y: hidden;
     overflow-x: wrap;
     text-wrap: wrap;
@@ -60,7 +65,7 @@ form{
 
 #signup-form h2 {
     text-align: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-top: -10px;
     font-size: 35px;
     /* font-family:'Times New Roman', Times, serif; */
@@ -68,9 +73,10 @@ form{
 
 #signup-form label {
     display: block;
+    
     margin-bottom: 5px;
     /* font-weight: bold; */
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     position: relative;
     left: 15px;
@@ -80,26 +86,19 @@ form{
 
 #signup-form input {
     width: 90%;
+    color: white;
     padding: 10px;
     margin-bottom: 15px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #929292;
+    background: transparent;
     /* border-radius: 4px; */
     /* grid-row: center; */
     /* align-content: center; */
 }
-#pat{
-    position: relative;
-    top:-18px;
-    right: 16px;
-    /* text-align: left; */
-    font-size: 10px;
-    font-weight: 100;
-    color: rgb(173, 173, 173);
-    
-}
+
 #errorm{
     position: relative;
     top:-18px;
@@ -121,18 +120,19 @@ sup{
 #signup-form button {
     width: 95%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: rgb(74, 38, 158);
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 8px;
     
 }
 
 #signup-form button:hover {
-    background-color: #0056b3;
+    background-color: rgba(255, 0, 128, 0.555);
+transition: all 0.2s ease-in-out;
 }
 /* .button1{
     display: flex;
@@ -142,7 +142,7 @@ sup{
 hr{
     width: 100%;
     border: 0;
-    background-color: rgb(220, 219, 219);
+    background-color: rgba(140, 104, 151, 0.514);
     height: 1px;
     /* margin-top: px; */
     position: relative;
@@ -150,7 +150,8 @@ hr{
 }
  p{
     text-align: center;    
-    color: #7f7f7fee;
+    color: rgb(192, 192, 192);
+    /* color: #ff00ff; */
     /* padding: 10px; */
     /* margin:10px; */
     position: relative;
