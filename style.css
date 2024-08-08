@@ -8,7 +8,11 @@ html{
 }
 body {
 font-family: Arial, sans-serif;
-background-color: #f2f2f2;
+background:url('12661.jpg');
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -17,12 +21,14 @@ margin: 0;
 }
 
 .signin-container {
-background-color: #fff;
+color: rgb(235, 221, 236);
+background-color: rgba(130, 132, 238, 0.089);
+/* opacity: ; */
 padding: 20px;
 border-radius: 8px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 width: 450px;
-height: 500px;
+height:73%;
 overflow-y: hidden;
 overflow-x: wrap;
 text-wrap: wrap;
@@ -38,8 +44,8 @@ width: 96%;
 
 #signin-form h2 {
 text-align: center;
-margin-bottom: 40px;
-margin-top: -10px;
+/* margin-bottom: ; */
+margin-top: -20px;
 font-size: 35px;
 /* font-family:'Times New Roman', Times, serif; */
 }
@@ -48,7 +54,7 @@ font-size: 35px;
 display: block;
 margin-bottom: 5px;
 /* font-weight: bold; */
-font-size: 16px;
+font-size: 20px;
 text-align: left;
 position: relative;
 left: 15px;
@@ -57,6 +63,8 @@ left: 15px;
 }
 
 #signin-form input {
+background: transparent;
+color: white;
 width: 90%;
 padding: 10px;
 margin-bottom: 15px;
@@ -80,18 +88,19 @@ border-bottom: 1px solid #ccc;
 #signin-form button {
 width: 95%;
 padding: 10px;
-background-color: #007bff;
+background-color: rgb(74, 38, 158);
 color: #fff;
 border: none;
 border-radius: 4px;
 cursor: pointer;
-font-size: 16px;
+font-size: 20px;
 margin-top: 8px;
 
 }
 
 #signin-form button:hover {
-background-color: #0056b3;
+background-color: rgba(255, 0, 128, 0.555);
+transition: all 0.2s ease-in-out;
 }
 /* .button1{
 display: flex;
@@ -101,10 +110,10 @@ align-items: center;
 hr{
 width: 100%;
 border: 0;
-background-color: rgb(220, 219, 219);
+background-color: rgba(140, 104, 151, 0.514);
 height: 1px;
 /* margin-top: px; */
-position: relative;
+position: relative; 
 top: 20px;
 }
 p{
