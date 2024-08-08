@@ -9,6 +9,8 @@ html,body{
 body {
     font-family: Arial, sans-serif;
     background:url('12661.jpg');
+  background-color:black;
+  opacity:2;
 background-repeat:no-repeat;
 background-position: center;
 background-size: cover;
