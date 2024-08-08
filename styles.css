@@ -23,11 +23,16 @@ background-attachment: fixed;
 }
 
 .signup-container {
-    color: rgb(235, 221, 236);
-    background-color: rgba(0, 0, 0, 0.137);
+/*     color: rgb(235, 221, 236); */
+/*     background-color: rgba(0, 0, 0, 0.137); */
     padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: #ffffff; /* White text for contrast */
+/*     padding: 20px; */
+/*     border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/*     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: 500px;
     height: 85%;
     overflow-y: hidden;
