@@ -71,7 +71,7 @@ margin-bottom: 15px;
 border-top: none;
 border-left: none;
 border-right: none;
-border-bottom: 0.5px solid #ccc;
+border-bottom: 0.5px solid #929292;
 /* border-radius: 4px; */
 /* grid-row: center; */
 /* align-content: center; */
@@ -118,7 +118,7 @@ top: 20px;
 }
 p{
 text-align: center;    
-color: #7f7f7fee;
+color: rgb(192, 192, 192);
 /* padding: 10px; */
 /* margin:10px; */
 position: relative;
