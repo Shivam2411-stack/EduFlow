@@ -9,8 +9,7 @@ html{
 body {
 font-family: Arial, sans-serif;
 background:url('12661.jpg');
-background-color:black;
-opacity:2;
+
 background-repeat:no-repeat;
 background-position: center;
 background-size: cover;
@@ -24,7 +23,7 @@ margin: 0;
 
 .signin-container {
 color: rgb(235, 221, 236);
-background-color: rgba(130, 132, 238, 0.089);
+background-color:  rgba(139, 31, 147, 0.268);
 /* opacity: ; */
 padding: 20px;
 border-radius: 8px;
