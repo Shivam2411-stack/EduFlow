@@ -24,7 +24,7 @@ background-attachment: fixed;
 
 .signup-container {
     color: rgb(235, 221, 236);
-    background-color: #34234d72;
+    background-color: rgba(0, 0, 0, 0.137);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
