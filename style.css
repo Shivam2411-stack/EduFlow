@@ -23,7 +23,7 @@ margin: 0;
 
 .signin-container {
 color: rgb(235, 221, 236);
-background-color: #34234d72;
+background-color: rgba(0, 0, 0, 0.137);
 /* opacity: ; */
 padding: 20px;
 border-radius: 8px;
