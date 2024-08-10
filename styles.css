@@ -83,20 +83,22 @@ form{
     }
     .signup-container {
         width: 350px;
-        height: 75%;
+        height: 69%;
         margin: 10px !important;
     }
     #signup-form h2 {
         text-align: center;
-        font-size: 23px !important;
+        position: relative;
+        top: -10px;
+        font-size: 18px !important;
     }
     #signup-form {
-        margin: 10px !important;
+        margin: 8px !important;
     }
     #signup-form label {
         display: block;
         margin-bottom: 5px;
-        font-size: 15px !important;
+        font-size: 12px !important;
         text-align: left;
         position: relative;
         left: 15px;
@@ -109,7 +111,7 @@ form{
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 15px !important;
+        font-size: 12px !important;
         margin-top: 0 !important;
     }
     #signup-form button:hover {
@@ -121,7 +123,7 @@ form{
         color: rgb(192, 192, 192);
         position: relative;
         top: 50px;
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 }
 
