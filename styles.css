@@ -1,65 +1,224 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduFlow - Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
-</head>
-<body>
-    <div class="signup-container">
-        
-        <form id="signup-form" align="center">
-            <h2>Sign Up</h2>
-            <label for="email">Email <sup>*</sup></label>
-            <input type="email" id="email" name="email" required><br><br><br>
-            
-            <label for="pass">Create Password <sup>*</sup></label>
-            <input type="password" id="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}" required><br><br><br>
-            <!-- <span id="pat">password should contain 8 or more characters also, at least 1 uppercase letter, 1 number and 1 symbol @ in it </span><br> -->
-            <label for="cpass">Confirm Password <sup>*</sup></label>
-            <input type="password" id="cpass" name="cpassword" required>
-            <br><br>
-            <span id="errorm"></span>
-            <br>
-            <button type="submit">Sign Up</button>
-            <br>
-            
-            <hr>
-            <p>Already have an account.? <a href="index.html">Sign in</a></p>
-        </form>
-    </div> 
+html,body{
+  
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background:url('12661.jpg');
+  background-color:black;
+  opacity:2;
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    <script>
-        var a = document.querySelector("#signup-form");
-        a.addEventListener('submit',function() {
-            
-        var pass = document.querySelector('#pass').value;
-        var error = document.querySelector('#errorm');
-        var cpass = document.querySelector('#cpass').value;
-        // error.style.display = 'none';
-        var returnval = true;
-        if (pass != cpass) {
-            errorm.innerHTML = 'both passwords should be same';
-            error.style.color = 'red';
-            error.style.fontStyle = 'italic';
-            error.style.fontSize = '10px';
-            // error.style.marginLeft = '';
-            error.style.animation = 'errom 0.32s ease-in-out';
-            
-            returnval = false;
-
-        } else {
-            // errorm.style.display = 'none';
-            errorm.innerHTML = '';
-            returnval =  true;
-        }
-        if (!returnval) {
-        event.preventDefault();
+.signup-container {
+/*     color: rgb(235, 221, 236); */
+/*     background-color: rgba(0, 0, 0, 0.137); */
+    padding: 18px;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: #ffffff; /* White text for contrast */
+/*     padding: 20px; */
+/*     border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+/*     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 500px;
+    height: 85%;
+    overflow-y: hidden;
+    overflow-x: wrap;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes errom {
+    0%{
+        position: relative;
+        left: 0px;
     }
-return returnval;
-        })
-    </script>
-</body>
-</html>
+    25%{
+        position: relative;
+        left: 5px;
+    }
+    50%{
+        position: relative;
+        left: -5px;
+    }
+    75%{
+        position: relative;
+        left: 5px;
+    }
+    100%{
+        position: relative;
+        left: -5px;
+    }
+}
+form{
+    width: 96%;
+    /* align-items: center;
+     */
+}
+
+#signup-form h2 {
+    text-align: center;
+    /* margin-bottom: 40px; */
+    margin-top: -10px;
+    font-size: 35px;
+    /* font-family:'Times New Roman', Times, serif; */
+}
+@media screen and (max-width: 700px){
+    body{
+        /* background-color:; */
+    }
+    .signup-container {
+        width: 350px;
+        height: 75%;
+        margin: 10px !important;
+    }
+    #signup-form h2 {
+        text-align: center;
+        font-size: 23px !important;
+    }
+    #signup-form {
+        margin: 10px !important;
+    }
+    #signup-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 15px !important;
+        text-align: left;
+        position: relative;
+        left: 15px;
+    }
+    #signup-form button {
+        width: 95%;
+        padding: 8px !important;
+        background-color: rgb(74, 38, 158);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px !important;
+        margin-top: 0 !important;
+    }
+    #signup-form button:hover {
+        background-color: rgba(255, 0, 128, 0.555);
+        transition: all 0.2s ease-in-out;
+    }
+    p {
+        text-align: center;    
+        color: rgb(192, 192, 192);
+        position: relative;
+        top: 50px;
+        font-size: 12px !important;
+    }
+}
+
+   
+
+#signup-form label {
+    display: block;
+    
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    left: 15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    /* top: 2px; */
+}
+
+#signup-form input {
+    width: 90%;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid #929292;
+    background: transparent;
+    /* border-radius: 4px; */
+    /* grid-row: center; */
+    /* align-content: center; */
+}
+
+#errorm{
+    position: relative;
+    top:-18px;
+}
+
+sup{
+    /* top: px; */
+    font-size: 10px;
+    color: red;
+}
+/* .signup-form input:hover{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+} */
+
+
+#signup-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(74, 38, 158);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 8px;
+    
+}
+
+#signup-form button:hover {
+    background-color: rgba(255, 0, 128, 0.555);
+transition: all 0.2s ease-in-out;
+}
+/* .button1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+hr{
+    width: 100%;
+    border: 0;
+    background-color: rgba(140, 104, 151, 0.514);
+    height: 1px;
+    /* margin-top: px; */
+    position: relative;
+    top: 20px;
+}
+ p{
+    text-align: center;    
+    color: rgb(192, 192, 192);
+    /* color: #ff00ff; */
+    /* padding: 10px; */
+    /* margin:10px; */
+    position: relative;
+    top: 50px;
+    font-size: 14px;
+}
+p a{
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
