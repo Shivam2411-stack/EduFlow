@@ -1,1 +1,3 @@
-This file contain the login and signnup page codes made by Shivam Pal
+# Form Validation
+password validation.
+if both password are same then only the form will be submitted
